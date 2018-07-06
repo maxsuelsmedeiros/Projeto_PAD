@@ -1,0 +1,14 @@
+#Esse documento existe para detalhar a criação do banco de dados em mysql do projeto de PAD
+#Inicialmente foi criado um banco de dados com o nome de Projeto_PAD, e em seguida nesse banco de dados, trabalhado a tabela chamada info_autenticar
+#Os comandos de criação foram dados da seguinte forma
+
+create table info_autenticar 
+( 
+matricula varchar(12) PRIMARY KEY, 
+primeiroNome varchar(30) not null, 
+sobreNome varchar(100) not null, 
+senhaAcesso varchar(8) not null, 
+horaEntrada time, 
+horaSaida time
+);
+
