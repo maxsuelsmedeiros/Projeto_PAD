@@ -11,6 +11,7 @@ public class Solicitante{
 	private String senhaAcesso;
 	private String horaEntrada;
 	private String horaSaida;
+	private String nomeLab;
 
 	public Solicitante (String matricula, String primeiroNome, String sobreNome, String senhaAcesso){
 	this.matricula=matricula;
@@ -19,13 +20,14 @@ public class Solicitante{
 	this.senhaAcesso=senhaAcesso;
 	}
 
-	public Solicitante (String matricula, String primeiroNome, String sobreNome, String senhaAcesso,String horaEntrada, String horaSaida){
+	public Solicitante (String matricula, String primeiroNome, String sobreNome, String senhaAcesso,String horaEntrada, String horaSaida, String nomeLaboratorio){
 	this.matricula=matricula;
 	this.primeiroNome=primeiroNome;
 	this.sobreNome=sobreNome;
 	this.senhaAcesso=senhaAcesso;
 	this.horaEntrada=horaEntrada;
 	this.horaSaida=horaSaida;
+	this.nomeLab=nomeLaboratorio;
 	}
 
 	public String getMatricula(){
@@ -74,5 +76,12 @@ public class Solicitante{
 	public void setHoraSaida(String horaSaida){
 		this.horaSaida=horaSaida;
 	}
-
+	
+	public String getLabNome() {
+		return this.nomeLab;
+	}
+	
+	public void setNomeLab(String nomeLAb) {
+		this.nomeLab=nomeLAb;
+	}
 }
